@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Imágenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .search-bar {
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .search-bar input {
+            width: 60%;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #005bb5;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0073e6;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Banco de Imágenes</h1>
+        <p>Encuentra y descarga imágenes gratuitas de alta calidad</p>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Busca imágenes..." />
+        <button>Buscar</button>
+    </div>
+
+    <section class="gallery">
+        <img src="https://via.placeholder.com/200" alt="Imagen 1">
+        <img src="https://via.placeholder.com/200" alt="Imagen 2">
+        <img src="https://via.placeholder.com/200" alt="Imagen 3">
+        <img src="https://via.placeholder.com/200" alt="Imagen 4">
+        <img src="https://via.placeholder.com/200" alt="Imagen 5">
+        <img src="https://via.placeholder.com/200" alt="Imagen 6">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Banco de Imágenes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
